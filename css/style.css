@@ -1,8 +1,55 @@
+/*body {
+	background-image: url("https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png");
+	background-color: lightgray;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	overflow: hidden;
+}*/
+
 .container {
 	width: 1165px;
 	margin: 0 auto;
 }
-h3 {
-	font-size: 48px;
-	color: hotpink;
+.divtext {
+	width: 170px;
+	height: 70px;
+	margin-bottom: 400px;
+	overflow: hidden;
+	transition: 1s;
+	font-size: 64px;
+
+}
+.divtext:hover {
+	width: 400px;
+}
+
+
+.mybox {
+	width: 300px;
+	height: 300px;
+	background-color: cyan;
+	transition: all 3s ease-in-out;
+}
+
+.mybox:hover {
+ 	transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+.box-ball {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: relative;
+	animation: mymove 3s ease-in 2s infinite  alternate-reverse;
+}
+
+
+@keyframes mymove {
+  0%   {top: 0px; left: 0px; background: red;}
+  25%  {top: 0px; left: 100px; background: blue;}
+  50%  {top: 100px; left: 100px; background: yellow;}
+  75%  {top: 100px; left: 0px; background: green;}
+  100% {top: 0px; left: 0px; background: red; opacity: 0;}
 }
